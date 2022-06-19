@@ -5,7 +5,8 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import { store, persistor } from './redux/store';
-import ExampleContainer from './containers/ExampleContainer';
+import SongContainer from './containers/SongContainer';
+import DashboardContainer from './containers/DashboardContainer';
 import { initSentry } from './services/sentry';
 import './i18n';
 import './index.css';
@@ -17,7 +18,8 @@ const App: FC = () => (
     <PersistGate loading={null} persistor={persistor}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ExampleContainer />} />
+          <Route path="/" element={<DashboardContainer />} />
+          <Route path="/song/:id" element={<SongContainer />} />
         </Routes>
       </BrowserRouter>
     </PersistGate>

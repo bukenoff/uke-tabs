@@ -1,3 +1,11 @@
+:root {
+  --rich-black-fogra-29: #011627ff;
+  --baby-powder: #fdfffcff;
+  --light-coral: #ef6f6cff;
+  --honey-yellow: #f6ae2dff;
+  --russian-green: #648767ff;
+}
+
 .App {
   text-align: center;
   width: 100%;
