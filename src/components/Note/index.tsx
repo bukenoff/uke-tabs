@@ -10,6 +10,7 @@ export const Note: FC<any> = ({ note, i, barI, register }: any) => {
       <input
         placeholder="."
         type="number"
+        min="0"
         {...register(`bars[${barI}].notes[${i}].fret`)}
       />
     </span>
