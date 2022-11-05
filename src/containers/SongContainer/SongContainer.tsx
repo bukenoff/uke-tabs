@@ -1,5 +1,7 @@
 import React, { FC, useCallback } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
+import Container from 'react-bootstrap/Container';
+
 import { Song } from '~/components/Song';
 
 export const SongContainer: FC = () => {
@@ -16,13 +18,13 @@ export const SongContainer: FC = () => {
   );
 
   return (
-    <div>
+    <Container>
       <FormProvider {...methods}>
         <form onSubmit={methods.handleSubmit(onSubmit)}>
           <Song />
           <button type="submit">submit</button>
         </form>
       </FormProvider>
-    </div>
+    </Container>
   );
 };
