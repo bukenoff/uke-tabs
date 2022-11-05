@@ -6,7 +6,7 @@ import { Song } from '~/components/Song';
 
 export const SongContainer: FC = () => {
   const methods = useForm({
-    defaultValues: JSON.parse(localStorage.getItem('tabs') || ''),
+    defaultValues: {},
   });
 
   const onSubmit = useCallback(
