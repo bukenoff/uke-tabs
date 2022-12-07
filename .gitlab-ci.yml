@@ -7,8 +7,7 @@ cache:
 
 stages:
   - install
-  - test
-  - lint
+  - test_and_lint
   - build
   - update-readme
 
@@ -27,12 +26,12 @@ build:
     - yarn build
 
 test:
-  stage: test
+  stage: test_and_lint
   script:
     - yarn test
 
 lint:
-  stage: lint
+  stage: test_and_lint
   script:
     - yarn lint
 
