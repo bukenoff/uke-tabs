@@ -14,7 +14,8 @@
     "postinstall": "husky install",
     "make-badges": "istanbul-badges-readme",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint --max-warnings 11 '**/*.{ts,tsx}'"
   },
   "husky": {
     "hooks": {

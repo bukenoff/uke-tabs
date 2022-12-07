@@ -26,6 +26,12 @@ test:
   script:
     - yarn test
 
+lint:
+  stage: lint
+  image: node:16-alpine
+  script:
+    - yarn lint
+
 update-readme:
   stage: update-readme
   image: node:16-alpine
