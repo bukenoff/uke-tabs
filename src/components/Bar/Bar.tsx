@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { useFormContext } from 'react-hook-form';
+
 import { Note } from '../Note';
 
 export const Bar: FC<any> = ({ notes, i: i2 }) => {
