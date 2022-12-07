@@ -1,13 +1,13 @@
-stages
+stages:
   - test
   - build
 
-build
+build:
   stage: build
   script:
     - yarn build
 
-test
+test:
   stage: test
   script:
     - yarn test
