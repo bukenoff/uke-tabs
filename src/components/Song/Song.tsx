@@ -40,11 +40,9 @@ const bar_template = {
 };
 
 export const Song: FC = () => {
-  const { fields, append, prepend, remove, swap, move, insert } = useFieldArray(
-    {
-      name: 'bars', // unique name for your Field Array
-    },
-  );
+  const { fields, append } = useFieldArray({
+    name: 'bars', // unique name for your Field Array
+  });
 
   return (
     <>

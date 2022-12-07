@@ -1,6 +1,13 @@
 import React, { FC } from 'react';
 
-export const Note: FC<any> = ({ note, i, barI, register }: any) => {
+interface NoteProps {
+  note: { string: string; order: number };
+  i: number;
+  barI: number;
+  register: (arg: string) => Record<string, unknown>;
+}
+
+export const Note: FC<NoteProps> = ({ note, i, barI, register }) => {
   return (
     <span
       className="note"

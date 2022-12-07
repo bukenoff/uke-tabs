@@ -5,4 +5,4 @@ export interface Thing {
 
 export type ThingsState = Readonly<{
   things_list: Thing[];
-}>
+}>;

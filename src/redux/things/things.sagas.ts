@@ -8,6 +8,6 @@ function* addThingSaga({ payload: { thing } }: ReturnType<typeof addThing>) {
   yield put({ type: 'SOME_REACTION_TO_ACTION' });
 }
 
-export default function* thingsFlow() {
+export default function* thingsFlow(): Generator<unknown> {
   yield takeLatest(getType(addThing), addThingSaga);
 }
