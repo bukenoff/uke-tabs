@@ -1,6 +1,7 @@
 stages:
   - install
   - test
+  - lint
   - build
   - update-readme
 
