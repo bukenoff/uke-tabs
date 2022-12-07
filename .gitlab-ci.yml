@@ -1,6 +1,13 @@
 stages:
+  - install
   - test
   - build
+
+install:
+  stage: install
+  image: node:16-alpine
+  script:
+    - yarn
 
 build:
   stage: build
