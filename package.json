@@ -13,8 +13,6 @@
     "test:coverage": "jest --collect-coverage",
     "postinstall": "husky install",
     "make-badges": "istanbul-badges-readme",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
     "lint": "eslint --max-warnings 11 '**/*.{ts,tsx}'"
   },
   "husky": {
@@ -51,10 +49,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
-    "@storybook/addon-actions": "^6.4.0-rc.1",
-    "@storybook/addon-essentials": "^6.4.0-rc.1",
-    "@storybook/addon-links": "^6.4.0-rc.1",
-    "@storybook/react": "^6.4.0-rc.1",
     "@testing-library/jest-dom": "^5.11.0",
     "@testing-library/react": "^10.4.3",
     "@testing-library/user-event": "^12.0.11",
@@ -69,12 +63,10 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-storybook": "^0.4.1",
     "husky": "^5.0.6",
     "istanbul-badges-readme": "^1.2.0",
     "jest": "^25.1.0",
     "prettier": "^2.1.2",
-    "storybook-builder-vite": "^0.1.6",
     "ts-jest": "^25.2.1",
     "ts-loader": "^7.0.5",
     "typescript": "^4.4.4",
