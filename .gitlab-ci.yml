@@ -9,7 +9,9 @@ install:
   script:
     - yarn
   artifacts:
-    when: always
+    expire_in: 1 hour
+    paths:
+      - node_modules/
 
 build:
   stage: build
