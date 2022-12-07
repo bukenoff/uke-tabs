@@ -2,6 +2,7 @@ stages:
   - install
   - test
   - build
+  - update-readme
 
 install:
   stage: install
@@ -24,3 +25,9 @@ test:
   image: node:16-alpine
   script:
     - yarn test
+
+update-readme:
+  stage: update-readme
+  image: node:16-alpine
+  script:
+    - make-badges
