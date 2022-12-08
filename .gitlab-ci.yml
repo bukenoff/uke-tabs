@@ -9,7 +9,6 @@ stages:
   - install
   - test_and_lint
   - build
-  - update-readme
 
 install:
   stage: install
@@ -34,8 +33,3 @@ lint:
   stage: test_and_lint
   script:
     - yarn lint
-
-update-readme:
-  stage: update-readme
-  script:
-    - yarn make-badges
