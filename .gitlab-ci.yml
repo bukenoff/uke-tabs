@@ -9,6 +9,7 @@ stages:
   - install
   - test_and_lint
   - build
+  - deploy
 
 install:
   stage: install
@@ -33,3 +34,11 @@ lint:
   stage: test_and_lint
   script:
     - yarn lint
+
+deploy:
+  stage: deploy
+  when: manual
+  script:
+    - echo "Deploying..."
+    - sleep 9
+    - echo "DEPLOY DONE HURRAY"
