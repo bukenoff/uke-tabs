@@ -10,26 +10,26 @@ on:
 jobs:
   install:
     name: 'install'
-    runs-on: node:16-alpine
+    runs-on: ubuntu-latest
     steps:
       - run: yarn
 
   test_and_lint:
     name: 'test_and_lint'
-    runs-on: node:16-alpine
+    runs-on: ubuntu-latest
     steps:
       - run: yarn test
       - run: yarn lint
 
   build:
     name: 'build'
-    runs-on: node:16-alpine
+    runs-on: ubuntu-latest
     steps:
       - run: yarn build
 
   deploy:
     name: 'deploy'
-    runs-on: node:16-alpine
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Deploying..."
       - run: sleep 9
