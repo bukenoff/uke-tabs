@@ -39,6 +39,5 @@ deploy:
   stage: deploy
   when: manual
   script:
-    - echo "Deploying..."
-    - sleep 9
-    - echo "DEPLOY DONE HURRAY"
+    - npm i -g surge
+    - surge --project ./dist --domain uketabs.surge.sh
